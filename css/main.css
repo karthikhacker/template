@@ -1,0 +1,520 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700);
+/*font-family: 'Roboto', sans-serif; */
+@import url(http://fonts.googleapis.com/css?family=Lato:400,300,700,400italic);
+/*font-family: 'Lato', sans-serif; */
+/***********************************************************************************
+  Body 
+ ***********************************************************************************/ 
+html, body{
+	height:100%;
+}
+
+body{
+	font-family: 'lato', sans-serif;
+	font-weight: 400;
+}
+ /***************************************************************************************
+      Navigation
+    ***************************************************************************************/
+ 
+  .navbar{
+  	padding-top:5px;
+  	padding-bottom: 5px;
+  	text-transform: uppercase;
+  	font-weight: 700;
+  	font-family: 'Roboto' sans-serif;
+  }
+  .nav li {
+  	margin-right: 20px;
+
+  }
+
+  .nav li a{
+    font-size: 15px;
+
+  }
+  .navbar a:focus{
+  	 outline: 0;
+  }
+
+  
+p{
+	color: #888;
+}
+
+h1,h2,h3,h4,h5,h6{
+
+	font-family: 'Roboto',sans-serif;
+	margin:0;
+	padding: 0;
+	font-weight: 700;
+}
+
+a{
+	color: #0099CC;
+}
+
+a:hover{
+	color: #398110;
+	text-decoration: none;
+}
+
+img{
+	width: 100%;
+	height:auto;
+}
+
+ul, li{
+	list-style: none;
+	margin: 0;
+	padding:0;
+}
+
+/*******************************************************************************************
+  Dot  Navigation
+ *******************************************************************************************/
+ 
+
+/**************************************************************************************
+    Banner
+  **************************************************************************************/
+  
+.main{
+	width:100%;
+	min-height: 100%;
+	background: url(../img/bg.jpg) center center no-repeat fixed;
+	padding:0;
+	position: relative;
+	color: #FFFFFF;
+}
+
+
+
+.welcome-message h1{
+	margin-top: 280px;
+	 padding-top: 21px;
+	 color:#FFFFFF;
+	 font-size: 5em;
+	 text-transform: uppercase;
+	 margin-bottom: 15px;
+}
+
+@media(max-width: 999px) {
+	.logo{
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 50px;
+}
+
+.welcome-message h1{
+	 padding-top:0x;
+	 color:#FFFFFF;
+	 font-size: 42px;
+	 text-transform: uppercase;
+	 margin-bottom: 15px;
+}
+
+}
+
+/*************************************************************************************
+      Service section
+ *************************************************************************************/
+ #services{
+ 	padding-top: 120px;
+ 	padding-bottom:50px;
+ }     
+
+ .service-block{
+ 	  position: relative;
+ 	  margin-bottom: 50px;
+ }
+
+ .service-block [class^="fa"]{
+ 	position: absolute;
+ 	display: block;
+ 	font-size: 40px;
+ 	margin:-13px 0 0;
+ 	color: #028482;
+ 	top: 0;
+ 	left:0;
+ 	width:70px;
+ 	height: 70px;
+ 	line-height: 70px;
+ 	text-align: center;
+
+ }
+
+ .service-box-right{
+ 	 margin: 10px 10px 35px 60px;
+ 	 padding: 0 20px 0;
+ }
+
+ .service-box-right h3{
+ 	  font-family: 'Roboto', sans-serif;
+ 	  font-size: 18px;
+ 	  color: #666666;
+ 	  margin-bottom: 15px;
+ }
+
+ .service-box-right p{
+ 	  font-family: 'lato' sans-serif;
+ 	  font-size: 14px;
+ 	  font-weight: 400;
+ 	  color:#5d5d5d;
+ 	  line-height: 24px;
+ }
+
+ .service-block, .service-block [class^="fa"], .service-block:hover [class^="fa"] {
+
+ 	  -moz-transition: all 0.6s linear;
+ 	  transition: all 0.6s linear;
+ }
+
+ .service-block:hover [class^="fa"] {
+
+ 	  color:#336699;
+ 	  transform: rotateY(360deg);
+ 	  -moz-transform: rotateY(360deg) translate(-50px);
+ }
+
+ /***********************************************************************************
+    Social section
+  ************************************************************************************/
+   #social{
+   	  width:100%;
+   	  background-color: #eee;
+   	  background-image: url('../img/bg.jpg');
+   	  background-attachment: fixed;
+   	  background-repeat: no-repeat;
+   }  
+  
+  .social-bg-overlay{
+       background:rgba(0,0,0,0.6);
+       padding-top:100px;
+       padding-bottom: 80px;
+  }
+
+ .karthik-social ul{
+
+ 	  margin-top: 0;
+ 	  margin-bottom: 0;
+ 	  padding-left: 0;
+ 	  list-style: none;
+ 	  text-align: center;
+ } 
+
+ .karthik-social ul li{
+
+ 	  display: inline-block;
+ 	  margin-right: 15px;
+
+ }
+
+.karthik-social ul li:last-child{
+	 margin-right:0;
+}
+
+.karthik-social ul li a{
+
+     width: 75px;
+     height:75px;
+     display: inline-block;
+     line-height: 80px;
+     text-align: center;
+     border-radius: 50%;
+     background-color: #FFFFFF;
+     color:#21BEDE;
+     font-size: 36px;
+}	 
+
+.karthik-social ul li a:hover{
+       
+        background-color: #21BEDE;
+        color:#fff;  
+    }
+
+/*********************************************************************************
+  About section
+ *********************************************************************************/
+ #about{
+ 	padding-top: 120px;
+ 	padding-bottom: 80px;
+ } 
+
+ h2.about-head{
+    
+      font-size: 24px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      color:#31C3E7;
+ }
+
+.about-text{
+	font-size: 16px;
+	color:#ADB6B5;
+	line-height: 30px;
+	font-weight: 400;
+	font-family: 'lato', sans-serif;
+}
+
+.about-text2{
+	font-size: 16px;
+	color: 	#ADB6B5;
+	line-height: 30px;
+	font-weight: 400;
+	font-family: 'lato', sans-serif;
+	margin-bottom: 20px;
+}
+
+.about-us h3{
+	font-size: 28px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+
+}
+
+.about-us h3 span{
+	color:	#31C3E7;
+	word-spacing: 1px;
+}
+
+.image-gallery {
+
+     float:left;
+     margin-bottom:20px;
+     text-align: center;
+
+}
+
+.image-gallery a img{
+
+	 width: 100%;
+	 height: 100px;
+	 margin-top: 0;
+	 margin-right:5px;
+	 margin-bottom:5px;
+	 margin-left:0;
+	 overflow: hidden;
+ 
+}
+
+.about-quote  h2 span{
+
+ 	color:#336699;
+ 	margin-bottom: 25px;
+ }
+.quote {
+   
+       margin-bottom:30px;
+
+    }	
+
+.quote .quote-icon{
+
+	 color: #666633;
+	 font-size:30px;
+	 width:45px;
+	 float:left;
+} 
+
+.quote blockquote{
+       
+      border:0;
+      padding:0;
+      margin:0;
+      margin-bottom:8px;
+      padding-left:45px; 
+	  font-size: 16px;
+	  line-height: 20px;
+	  color:#999999;
+	  font-family: 'lato',sans-serif;
+	  font-weight: 700;
+	  font-style: italic;
+}
+
+  .quote-by{
+
+     color:#84596B;
+     font-size: 12px;
+     padding-left:45px;
+     font-family: 'Roboto' sans-serif;
+     font-weight: 700;
+     text-transform: uppercase; 
+}
+
+/**********************************************************************************
+  Twitter Area
+ **********************************************************************************/
+ 
+  #twitter{
+   	  width:100%;
+   	  background-color: #eee;
+   	  background-image: url('../img/bg.jpg');
+   	  background-attachment: fixed;
+   	  background-repeat: no-repeat;
+   }  
+  
+  .twitter-bg-overlay{
+       background:rgba(0,0,0,0.6);
+       padding-top:100px;
+       padding-bottom: 80px;
+  } 
+
+#twitter .twitter-icon{
+     display: block;
+     font-size: 45px;
+	 width: 75px;
+	 height:75px;
+	 margin: 0 auto;
+	 background:#028482;
+	 padding-top:8px;
+	 padding-left: 17px;
+	 border-radius: 50%;
+	 color:#fff;
+
+}
+
+#twitter .twitter-icon:hover{
+
+	 color:#028482;
+	 background:#fff;
+}
+
+/*********************************************************************************
+  Contact section
+ *********************************************************************************/
+ #contact{
+
+ 	 padding-top: 120px;
+ 	 padding-bottom:60px;
+ } 
+
+ .form-group{
+
+ 	 margin-bottom:30px;
+ }
+
+ .form-group input{
+ 
+
+ 	 padding:9px;
+ 	 background-color: transparent;
+ 	 border:1px solid #ddd;
+ 	 border-radius:2px;
+ 	 box-shadow: none;
+ 	 font-family: 'lato',sans-serif;
+ 	 font-size: 14px;
+ 	 font-style: inherit;
+ } 
+
+ .form-group textarea{
+
+ 	 padding:9px;
+ 	 background-color: transparent;
+ 	 border: 1px solid #ddd;
+ 	 border-radius:2px;
+ 	 box-shadow: none;
+ 	 font-family: 'lato',sans-serif;
+ 	 font-size: 14px;
+ 	 font-style: inherit;
+ }
+
+ .form-group input.form-control{
+
+ 	  height:60px;
+ }
+
+ .form-group textarea.form-control{
+ 	height:150px;
+
+}
+
+.form-control:focus{
+   
+    box-shadow: none;
+    border: 1px solid #ddd;
+}
+
+.btn{
+	width:100%;
+	height: 60px;
+	border-radius:0;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.btn:hover{
+	background:#fff;
+	color:#0099CC;
+	border-color:#000;
+}
+
+/*************************************************************************************
+ Address
+ *************************************************************************************/
+.address h3{
+
+	font-size: 21px;
+	text-transform: uppercase;
+	font-family: 'Roboto',sans-serif;
+	font-weight: 700;
+	margin-bottom:30px;
+
+}
+.address h3 span{
+
+	color:#447822;
+}
+
+.address address{
+
+	 font-size: 16px;
+	 font-family: 'lato',sans-serif;
+	 color:#666;
+	 line-height: 20px;
+}
+
+.contact-no p span{
+
+	font-size: 25px;
+	color:	#6E591B;
+	padding-right:10px;
+	font-weight: 700;
+	margin-bottom:20px;
+}
+
+.contact-mobile p span{
+
+	font-size: 25px; 
+	padding-right:15px;
+	color:#301F0D;
+	font-weight: 700;
+	margin-bottom:20px;
+}
+
+.contact-envelope p span{
+
+	font-size: 25px; 
+	padding-right:10px;
+	color:#BDD8DA;
+	font-weight: 700;
+	margin-bottom:20px;
+}
+
+/*************************************************************************************
+    Footer
+ *************************************************************************************/
+ .footer{
+
+ 	 padding-top:30px;
+ 	 padding-bottom:20px;
+ 	 background:#202030;
+ }
+
+ .footer p{
+
+ 	font-size: 18px;
+ 	font-family: 'Roboto',sans-serif;
+ 	color:#fff;
+ 	text-align: center;
+ }
